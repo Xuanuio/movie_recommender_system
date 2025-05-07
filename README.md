@@ -39,11 +39,13 @@ Phương pháp sử dụng:
 
 ## 📁 Cấu trúc dự án
 
+   - Cấu trúc dự án cơ bản sẽ như sau:
+
 ```
 movie_recommender_system/
 ├── dataset.csv                # Dữ liệu phim gồm title, overview, genre
 ├── streamlit_app.py           # File giao diện người dùng chạy bằng Streamlit
-├── recommender_model.py       # (Tùy chọn) Bạn có thể tách riêng phần logic ở đây
+├── model.py                   # File model
 └── README.md                  # Tài liệu hướng dẫn
 ```
 
@@ -70,7 +72,8 @@ http://localhost:8501
 
 ## 📌 Lưu ý
 - Dữ liệu `dataset.csv` phải chứa các cột: `title`, `overview`, `genre`
-- Tốc độ xử lý có thể chậm nếu dữ liệu lớn, nên có thể lưu sẵn vector để truy cập nhanh (nâng cấp sau)
+- Tốc độ xử lý có thể chậm nếu dữ liệu lớn, --> lưu sẵn các vector để tốc độ truy cập nhanh.
+- Tối ưu hiệu năng: --> lưu sẵn ma trận similarity
 
 ---
 
@@ -83,12 +86,10 @@ Dự án này phù hợp để làm **Bài tập lớn môn Trí tuệ nhân t�
 ---
 
 ## 💡 Định hướng mở rộng
-- Tối ưu hiệu năng bằng cách lưu sẵn ma trận similarity
 - Bổ sung lựa chọn dựa trên diễn viên, đạo diễn,...
 - Kết hợp với giao diện người dùng nâng cao hơn
 
 ---
 
-## 👨‍💻 Tác giả
-*Bạn hãy bổ sung thông tin nhóm hoặc người phát triển ở đây.*
-# movie_recommender_system
+## 👨‍💻 Liên hệ
+- Nếu còn thắc mắc cần được giải đáp liên hệ Xuanuio.
